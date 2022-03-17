@@ -1,0 +1,64 @@
+/* ---- Cutomized spacing ---- */
+.content__productsPage
+  margin-bottom: 60px
+  +pad
+    margin-bottom: 0
+    flex-direction: column
+
+/* ---- topbar has been imported ---- */
+
+/* ---- header has been imported ---- */
+
+/* ---- sortSection ---- */
+.sortSection
+  +font(2, 500)
+  min-width: 300px
+  text-align: center
+  line-height: 1.5
+
+.sortSection > h2, .sortList > li > a
+  padding: 16px 0
+
+.sortSection > h2
+  background-color: $darkGreen
+  color: $lightGreen
+
+.sortList > li
+  border-right: 1px solid $lightGreen
+  border-left: 1px solid $lightGreen
+  border-bottom: 1px solid $lightGreen
+
+.sortList > li > a
+  display: block
+  color: $darkGreen
+
+.sortList > li > a:hover
+  background-color: $lightGreen
+
+/* ---- products has been imported ---- */
+
+/* ---- pagination ---- */
+.pagination
+  margin-top: 10px
+  +pad
+    margin-top: 0
+  li a
+    text-align: center
+    width: 100%
+    line-height: 60px
+  li:not([class="pagination__numberList"])
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 60px
+    border: 1px solid $lightGreen
+  &__number
+    text-align: center
+    color: $darkGreen
+    &:hover
+      color: #fff
+      background-color: $darkGreen
+
+/* ---- subscribe has been imported ---- */
+
+/* ---- footer has been imported ---- */

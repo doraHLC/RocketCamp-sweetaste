@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo-dark.png">
+    <script src="https://kit.fontawesome.com/0f3f38a034.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <title>Sweetaste_checkout ship</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <label class="menu_lable" for="menu_burger">
+                <img src="img/dehaze-24px.png" alt="">
+                <input type="checkbox" id="menu_burger">
+                <ul class="menu_ul">
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+            </label>
+            <h1 class="header_h1"><a href="home.html">Sweetaste</a></h1>
+            <div class="header_d">
+                <ul class="header_ul">
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+                <div class="header_a"><a href="cart.html"><img src="img/shopping_cart.png" alt="shiooing car"></a></div>
+            </div>
+        </header>
+    </div>
+
+    <div class="checkout_ship d-flex">
+        <form class="ship_form" action="checkoutPay.html">
+            <div class="ship_process">
+                <h3>運送</h3>
+                <img src="img/bar_delivery.svg" alt="bar_delivery">
+            </div>
+            <fieldset class="ship_info">
+                <label class="d-w1" for="lastName">
+                    <h4>姓氏</h4>
+                    <input class="d-w2" type="text" id="lastName" placeholder="王" required>
+                </label>
+                <label class="d-w1" for="firstName">
+                    <h4>名字</h4>
+                    <input class="d-w2" type="text" id="firstName" placeholder="小明" required>
+                </label>
+                <label class="d-w2" for="tel">
+                    <h4>電話</h4>
+                    <input class="d-w2" type="text" id="tel" placeholder="0912-345-678" required>
+                </label>
+                <label class="d-w2" for="address">
+                    <h4>地址</h4>
+                    <div class="d-flex ship_select">
+                        <select name="city" id="city" required>
+                            <option value="請選擇" selected>請選擇</option>
+                            <option value="臺北市">臺北市</option>
+                            <option value="新北市">新北市</option>
+                            <option value="桃園市">桃園市</option>
+                            <option value="臺中市">臺中市</option>
+                            <option value="臺南市">臺南市</option>
+                            <option value="高雄市">高雄市</option>
+                            <option value="基隆市">基隆市</option>
+                            <option value="新竹市">新竹市</option>
+                            <option value="嘉義市">嘉義市</option>
+                            <option value="新竹縣">新竹縣</option>
+                            <option value="苗栗縣">苗栗縣</option>
+                            <option value="彰化縣">彰化縣</option>
+                            <option value="南投縣">南投縣</option>
+                            <option value="雲林縣">雲林縣</option>
+                            <option value="嘉義縣">嘉義縣</option>
+                            <option value="屏東縣">屏東縣</option>
+                            <option value="宜蘭縣">宜蘭縣</option>
+                            <option value="花蓮縣">花蓮縣</option>
+                            <option value="臺東縣">臺東縣</option>
+                            <option value="澎湖縣">澎湖縣</option>
+                            <option value="金門縣">金門縣</option>
+                            <option value="連江縣">連江縣</option>
+                        </select>
+                        <select name="zone" id="zone" required>
+                            <option value="請選擇" selected>請選擇</option>
+                            <option value="新興區">新興區</option>
+                            <option value="前金區">前金區</option>
+                            <option value="苓雅區">苓雅區</option>
+                            <option value="鹽埕區">鹽埕區</option>
+                            <option value="鼓山區">鼓山區</option>
+                            <option value="旗津區">旗津區</option>
+                            <option value="前鎮區">前鎮區</option>
+                            <option value="三民區">三民區</option>
+                            <option value="楠梓區">楠梓區</option>
+                            <option value="小港區">小港區</option>
+                            <option value="左營區">左營區</option>
+                            <option value="仁武區">仁武區</option>
+                            <option value="大社區">大社區</option>
+                            <option value="岡山區">岡山區</option>
+                            <option value="路竹區">路竹區</option>
+                            <option value="阿蓮區">阿蓮區</option>
+                            <option value="田寮區">田寮區</option>
+                            <option value="燕巢區">燕巢區</option>
+                            <option value="橋頭區">橋頭區</option>
+                            <option value="梓官區">梓官區</option>
+                            <option value="彌陀區">彌陀區</option>
+                            <option value="永安區">永安區</option>
+                            <option value="湖內區">湖內區</option>
+                            <option value="鳳山區">鳳山區</option>
+                            <option value="大寮區">大寮區</option>
+                            <option value="林園區">林園區</option>
+                            <option value="鳥松區">鳥松區</option>
+                            <option value="大樹區">大樹區</option>
+                            <option value="旗山區">旗山區</option>
+                            <option value="美濃區">美濃區</option>
+                            <option value="六龜區">六龜區</option>
+                            <option value="內門區">內門區</option>
+                            <option value="杉林區">杉林區</option>
+                            <option value="甲仙區">甲仙區</option>
+                            <option value="桃源區">桃源區</option>
+                            <option value="那瑪夏區">那瑪夏區</option>
+                            <option value="茂林區">茂林區</option>
+                            <option value="茄萣區">茄萣區</option>
+                        </select>
+                    </div>
+                    <input class="d-w2" type="text" id="add" placeholder="幸福路 520 號" required>
+                </label>
+            </fieldset>
+            <button type="submit" class="shipNext_btn">下一步</button>
+
+        </form>
+
+        <div class="order_side">
+            <div class="shop_total">
+                <div class="total_summary">
+                    <h2>訂單摘要</h2>
+                    <ul>
+                        <li>
+                            <p>小計</p>
+                            <div>
+                                <span>NT$</span>
+                                <span>2,700</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>運費</p>
+                            <div>
+                                <span>NT$</span>
+                                <span>300</span>
+                            </div>
+                        </li>
+                        <li class="summary">
+                            <p>總計</p>
+                            <div>
+                                <span>NT$</span>
+                                <span>3,000</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ship_cart">
+                <h3 class="shop_h3">您的購物車</h3>
+                <div class="shop_box">
+                    <div class="shop_img">
+                        <img src="img/p-8.jpg" alt="P8">
+                    </div>
+                    <div class="shop_text">
+                        <p>焦糖馬卡龍&ensp; <span>(2)</span></p>
+                        <div class="shop_price">
+                            <p>NT$ 900</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop_box">
+                    <div class="shop_img">
+                        <img src="img/p-5.png" alt="P5">
+                    </div>
+                    <div class="shop_text">
+                        <p>焦糖馬卡龍&ensp; <span>(2)</span></p>
+                        <div class="shop_price">
+                            <p>NT$ 900</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop_box">
+                    <div class="shop_img">
+                        <img src="img/p-3.png" alt="P3">
+                    </div>
+                    <div class="shop_text">
+                        <p>焦糖馬卡龍&ensp; <span>(2)</span></p>
+                        <div class="shop_price">
+                            <p>NT$ 900</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="bgPrimary pd-3">
+            <div class="subscription ftWrap">
+                <div class="subInfo">
+                    <img src="img/logo-light.svg" alt="logo-light">
+                    <h2>訂閱你我的甜蜜郵件</h2>
+                </div>
+                <form action="product.html">
+                    <label class="pd-1 bgSecondary" for="mail"><img src="img/mail-24px.png" alt="mailIcon"></label>
+                    <input class="bgSecondary" id="mail" type="text" name="mail">
+                    <button type="submit"><img src="img/arrow_forward-24px.png" alt="submit"></button>
+                </form>
+            </div>
+        </div>
+        <div class="bgSecondary pd-3">
+            <ul class="methodList ftWrap">
+                <li class="methodInfo">
+                    <a href="#"><img class="img-1" src="img/logotype-sm-dark.svg" alt="logotype"></a>
+                    <div>
+                        <p>07-1234-5678</p>
+                        <p>sweetaste@email.com</p>
+                        <p>800高雄市新興區幸福路520號</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="img-2 mobile" src="img/text-sm.svg" alt="text">
+                </li>
+            </ul>
+            <ul class="methodSocial ftWrap">
+                <li>
+                    <img class="downImg" src="img/ic-line@.svg" alt="line">
+                    <img class="downImg" src="img/ic-facebook.svg" alt="facebook">
+                </li>
+                <li>
+                    <p>© 2018 Sweetaste* All Rights Reserved</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

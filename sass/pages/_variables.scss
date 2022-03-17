@@ -1,0 +1,16 @@
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875; //14px
+$font-size-lg: $font-size-base * 1.125; //18px
+$h1-font-size: $font-size-base * 2.5; //40px
+$h2-font-size: $font-size-base * 2; //32px
+$h3-font-size: $font-size-base * 1.75; //28px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h6-font-size: $font-size-base; //16px
+
+$font-family-main: "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", "PingFang", "STHeiti", sans-serif, serif;
+
+$colors-primary: #3f5d45;
+$colors-secondary: #EAF0ED;
+$colors-info: #f08300;
+$colors-success: #FFE180;

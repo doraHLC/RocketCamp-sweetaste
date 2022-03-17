@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo-dark.png">
+    <script src="https://kit.fontawesome.com/0f3f38a034.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/all.css">
+    <title>Sweetaste_LogIn</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <label class="menu_lable" for="menu_burger">
+                <img src="img/dehaze-24px.png" alt="">
+                <input type="checkbox" id="menu_burger">
+                <ul class="menu_ul">
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+            </label>
+            <h1 class="header_h1"><a href="home.html">Sweetaste</a></h1>
+            <div class="header_d">
+                <ul class="header_ul">
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+                <div class="header_a"><a href="cart.html"><img src="img/shopping_cart.png" alt="shiooing car"></a></div>
+            </div>
+        </header>
+    </div>
+
+
+
+
+    <div class="loginPage">
+        <div class="login_entry">
+            <h3 class="login_h3 l-n">會員登入</h3>
+            <form action="login.html">
+                <div class="login_wrap">
+                    <div class="login_num">
+                        <label for="mail"><img src="img/user-solid.svg" alt="userIcon"></label>
+                        <input type="text" id="mail" placeholder="電子信箱/手機號碼" required>
+                    </div>
+                    <div class="login_num">
+                        <label for="password"><img src="img/key-solid.svg" alt="keyIcon"></label>
+                        <input type="password" id="password" placeholder="請輸入使用者密碼" required>
+                    </div>
+                    <input type="checkbox" value="rememberme" name="rememberme"><span class="login_rem">記住我</span>
+                </div>
+                <br>
+                <button class="login_btn" type="submit">登入帳號</button>
+            </form>
+        </div>
+        <div class="login_social">
+            <h3 class="login_h3 pad-n">會員登入</h3>
+            <h3 class="social_h3">—— 連結社群帳號 ——</h3>
+            <form action="login.html">
+                <div class="social_wrap">
+                    <button><img src="img/ic-facebook-logotype.png" alt="facebook"></button>
+                    <button><img src="img/ic-google.png" alt="google"></button>
+                    <button><img src="img/ic-yahoo.png" alt="yahoo"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="bgPrimary pd-3">
+            <div class="subscription ftWrap">
+                <div class="subInfo">
+                    <img src="img/logo-light.svg" alt="logo-light">
+                    <h2>訂閱你我的甜蜜郵件</h2>
+                </div>
+                <form action="product.html">
+                    <label class="pd-1 bgSecondary" for="mail"><img src="img/mail-24px.png" alt="mailIcon"></label>
+                    <input class="bgSecondary" id="mail" type="text" name="mail">
+                    <button type="submit"><img src="img/arrow_forward-24px.png" alt="submit"></button>
+                </form>
+            </div>
+        </div>
+        <div class="bgSecondary pd-3">
+            <ul class="methodList ftWrap">
+                <li class="methodInfo">
+                    <a href="#"><img class="img-1" src="img/logotype-sm-dark.svg" alt="logotype"></a>
+                    <div>
+                        <p>07-1234-5678</p>
+                        <p>sweetaste@email.com</p>
+                        <p>800高雄市新興區幸福路520號</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="img-2 mobile" src="img/text-sm.svg" alt="text">
+                </li>
+            </ul>
+            <ul class="methodSocial ftWrap">
+                <li>
+                    <img class="downImg" src="img/ic-line@.svg" alt="line">
+                    <img class="downImg" src="img/ic-facebook.svg" alt="facebook">
+                </li>
+                <li>
+                    <p>© 2018 Sweetaste* All Rights Reserved</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

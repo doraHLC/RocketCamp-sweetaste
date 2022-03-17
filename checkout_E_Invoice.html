@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo-dark.png">
+    <script src="https://kit.fontawesome.com/0f3f38a034.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <title>Sweetaste_checkout invoice</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <label class="menu_lable" for="menu_burger">
+                <img src="img/dehaze-24px.png" alt="">
+                <input type="checkbox" id="menu_burger">
+                <ul class="menu_ul">
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+            </label>
+            <h1 class="header_h1"><a href="home.html">Sweetaste</a></h1>
+            <div class="header_d">
+                <ul class="header_ul">
+                    <li><a href="home.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+                <div class="header_a"><a href="cart.html"><img src="img/shopping_cart.png" alt="shiooing car"></a></div>
+            </div>
+        </header>
+    </div>
+
+    <div class="checkout_invoice d-flex">
+        <form class="invoice_form" action="checkout_success.html">
+            <div class="invoice_process">
+                <h3>發票</h3>
+                <img src="img/bar_invoice.svg" alt="bar_invoice">
+            </div>
+            <fieldset class="invoice_info">
+                <label class="invoice d-flex d-w2" for="invoice">
+                    <div class="invoice_lottery in_bg d-w2"><a href="ch">電子發票</a></div>
+                    <div class="invoice_lottery d-w2"><a href="checkout_post_Invoice.html">郵寄發票</a></div>
+                </label>
+                <label class="d-w2" for="mail">
+                    <h4>電子郵件信箱</h4>
+                    <input class="d-w2" type="mail" id="mail" placeholder="example@email.com" required>
+                </label>
+                <label class="d-w2" for="pay_firstName">
+                    <h4>統一編號（選填）</h4>
+                    <input class="d-w2" type="text" id="pay_firstName" placeholder="12345678">
+                </label>
+            </fieldset>
+            <button type="submit" class="shipNext_btn">確認結帳</button>
+        </form>
+
+        <div class="order_side">
+            <div class="shop_total">
+                <div class="total_summary">
+                    <h2>訂單摘要</h2>
+                    <ul>
+                        <li>
+                            <p>小計</p>
+                            <div>
+                                <span>NT$</span>
+                                <span>2,700</span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>運費</p>
+                            <div>
+                                <span>NT$</span>
+                                <span>300</span>
+                            </div>
+                        </li>
+                        <li class="summary">
+                            <p>總計</p>
+                            <div>
+                                <span>NT$</span>
+                                <span>3,000</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ship_cart">
+                <h3 class="shop_h3">您的購物車</h3>
+                <div class="shop_box">
+                    <div class="shop_img">
+                        <img src="img/p-8.jpg" alt="P8">
+                    </div>
+                    <div class="shop_text">
+                        <p>焦糖馬卡龍&ensp; <span>(2)</span></p>
+                        <div class="shop_price">
+                            <p>NT$ 900</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop_box">
+                    <div class="shop_img">
+                        <img src="img/p-5.png" alt="P5">
+                    </div>
+                    <div class="shop_text">
+                        <p>焦糖馬卡龍&ensp; <span>(2)</span></p>
+                        <div class="shop_price">
+                            <p>NT$ 900</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop_box">
+                    <div class="shop_img">
+                        <img src="img/p-3.png" alt="P3">
+                    </div>
+                    <div class="shop_text">
+                        <p>焦糖馬卡龍&ensp; <span>(2)</span></p>
+                        <div class="shop_price">
+                            <p>NT$ 900</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="bgPrimary pd-3">
+            <div class="subscription ftWrap">
+                <div class="subInfo">
+                    <img src="img/logo-light.svg" alt="logo-light">
+                    <h2>訂閱你我的甜蜜郵件</h2>
+                </div>
+                <form action="product.html">
+                    <label class="pd-1 bgSecondary" for="mail"><img src="img/mail-24px.png" alt="mailIcon"></label>
+                    <input class="bgSecondary" id="mail" type="text" name="mail">
+                    <button type="submit"><img src="img/arrow_forward-24px.png" alt="submit"></button>
+                </form>
+            </div>
+        </div>
+        <div class="bgSecondary pd-3">
+            <ul class="methodList ftWrap">
+                <li class="methodInfo">
+                    <a href="#"><img class="img-1" src="img/logotype-sm-dark.svg" alt="logotype"></a>
+                    <div>
+                        <p>07-1234-5678</p>
+                        <p>sweetaste@email.com</p>
+                        <p>800高雄市新興區幸福路520號</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="img-2 mobile" src="img/text-sm.svg" alt="text">
+                </li>
+            </ul>
+            <ul class="methodSocial ftWrap">
+                <li>
+                    <img class="downImg" src="img/ic-line@.svg" alt="line">
+                    <img class="downImg" src="img/ic-facebook.svg" alt="facebook">
+                </li>
+                <li>
+                    <p>© 2018 Sweetaste* All Rights Reserved</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
