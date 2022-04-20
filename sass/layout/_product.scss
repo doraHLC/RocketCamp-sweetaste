@@ -1,0 +1,203 @@
+.banner_product {
+    background-image: url(../img/banner.png);
+    margin-bottom: 60px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 496px;
+
+    @include mobile {
+        margin-bottom: 0;
+        height: 277px;
+        background-size: cover;
+        background-position: center right;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    margin-bottom: 30px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .menuList {
+        width: 32%;
+        text-align: center;
+        font-size: 24px;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        h2 {
+            background: $colors-primary;
+            padding: 16px 0;
+            color: $colors-secondary;
+        }
+
+        ul li {
+            padding: 16px 0;
+            border: 1px solid $colors-secondary;
+
+            &:hover {
+                background: $colors-secondary;
+            }
+
+            a {
+                text-decoration: none;
+                color: $colors-primary;
+                font-weight: bold;
+
+                &:hover {
+                    color: $colors-info;
+                }
+            }
+        }
+    }
+
+    .menuBox {
+        width: 68%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        .page {
+            display: flex;
+            justify-content: flex-end;
+
+            @include mobile {
+                justify-content: center;
+                margin-bottom: 0;
+            }
+
+            li {
+                width: 60px;
+                border: 1px solid $colors-secondary;
+                text-align: center;
+                font-size: $h5-font-size;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    text-decoration: none;
+                    line-height: 60px;
+                    color: $colors-primary;
+                }
+            }
+        }
+
+        .page_Num {
+            color: $colors-primary;
+
+            &:hover {
+                background: $colors-primary;
+                color: $colors-secondary;
+            }
+        }
+    }
+}
+
+.menuBox_card_Pdt {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li:nth-child(n + 4) {
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .box {
+        position: relative;
+        width: 300px;
+
+        span {
+            position: absolute;
+            z-index: 2;
+            writing-mode: vertical-lr;
+            background: $colors-primary;
+            padding: 10px;
+            color: $colors-secondary;
+            letter-spacing: 3px;
+            left: 20px;
+            font-size: $h6-font-size;
+        }
+
+        .boxA {
+            position: absolute;
+            display: block;
+            z-index: 2;
+            right: 20px;
+            top: 20px;
+            color: $colors-primary;
+
+            &:hover {
+                color: $colors-info;
+            }
+        }
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+        font-size: $h5-font-size;
+        color: $colors-primary;
+
+        h3 {
+            width: 57%;
+            text-align: center;
+            border: 1px solid $colors-secondary;
+            padding: 14px 0;
+        }
+
+        p {
+            width: 43%;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid $colors-secondary;
+            padding: 14px 0;
+        }
+    }
+
+    .add {
+        padding: 16px 0;
+        font-size: $h4-font-size;
+        color: $colors-primary;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        border: 1px solid $colors-secondary;
+
+        &:hover {
+            color: $colors-secondary;
+            background-color: $colors-primary;
+        }
+    }
+}
+
+
+
+.bgSecondary {
+    background-color: $colors-secondary;
+}
+
+.bgPrimary {
+    background-color: $colors-primary;
+}
+
+.t_Select {
+    color: $colors-secondary;
+}
