@@ -1,0 +1,264 @@
+.loginPage {
+    font-family: $font-family-main;
+    width: 800px;
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+
+    @include mobile {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 0;
+        margin: 0 auto;
+    }
+
+    .login_entry {
+        width: 390px;
+        background: $colors-secondary;
+
+        @include mobile {
+            width: 100%;
+            background: $colors-primary;
+        }
+
+        &:hover {
+            background: $colors-primary;
+            transition: all 0.2s;
+            transform: scale(1.1);
+
+            @include mobile {
+                transition: none;
+                transform: none;
+            }
+
+            .login_h3 {
+                color: $colors-secondary;
+                filter: opacity(100%);
+            }
+
+            .login_num label {
+                filter: opacity(100%);
+            }
+
+            .login_num input {
+                background-color: $colors-secondary;
+            }
+
+            .login_rem {
+                color: $colors-secondary;
+            }
+
+            .login_btn {
+                background: $colors-success;
+                color: $colors-primary;
+                filter: opacity(100%);
+            }
+        }
+    }
+
+    .login_h3 {
+        font-size: $h2-font-size;
+        color: $colors-primary;
+        text-align: center;
+        padding-top: 40px;
+        font-weight: 800;
+        filter: opacity(50%);
+
+        @include mobile {
+            filter: opacity(100%);
+            color: $colors-secondary;
+        }
+    }
+
+    .login_wrap {
+        padding: 40px 30px 30px 30px;
+    }
+
+    .login_num {
+        position: relative;
+        margin-bottom: 16px;
+
+        label {
+            position: absolute;
+            z-index: 2;
+            top: 27%;
+            left: 20px;
+            filter: opacity(50%);
+
+            @include mobile {
+                filter: opacity(100%);
+            }
+
+            img {
+                width: 20px;
+                vertical-align: middle;
+            }
+        }
+
+        input {
+            width: 330px;
+            padding: 16px 16px 16px 64px;
+            background-color: #fff;
+            border: 0;
+            font-size: $h6-font-size;
+
+            @include mobile {
+                width: 100%;
+                background-color: $colors-secondary;
+            }
+
+            &:focus {
+                outline: 3px solid $colors-success;
+            }
+
+            &::placeholder {
+                color: #8da291;
+                font-size: $h6-font-size;
+            }
+        }
+    }
+
+    input {
+        &[type="checkbox"] {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin: 0;
+        }
+
+        &[type="checkbox"]:checked {
+            color: $colors-primary;
+            background: $colors-secondary;
+        }
+    }
+
+    .login_rem {
+        color: $colors-primary;
+        font-size: $h6-font-size;
+        margin-left: 8px;
+        filter: opacity(50%);
+
+        @include mobile {
+            color: $colors-secondary;
+            filter: opacity(100%);
+        }
+    }
+
+    .login_btn {
+        height: 65px;
+        width: 100%;
+        background: $colors-primary;
+        border: 0;
+        font-size: $h4-font-size;
+        color: $colors-secondary;
+        font-weight: 900;
+        filter: opacity(50%);
+        cursor: pointer;
+
+        @include mobile {
+            background: $colors-success;
+            color: $colors-primary;
+            filter: opacity(100%);
+        }
+    }
+
+    .login_social {
+        width: 390px;
+        background: $colors-secondary;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        &:hover {
+            background: $colors-primary;
+            transition: all 0.2s;
+            transform: scale(1.1);
+
+            @include mobile {
+                background: $colors-secondary;
+                transition: none;
+                transform: none;
+            }
+
+            .social_h3 {
+                color: $colors-secondary;
+                filter: opacity(100%);
+            }
+        }
+    }
+
+    .social_h3 {
+        font-size: $h4-font-size;
+        color: $colors-primary;
+        text-align: center;
+        padding-top: 40px;
+        font-weight: 800;
+        filter: opacity(50%);
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .social_wrap {
+        padding: 40px 30px 30px 30px;
+
+        @include mobile {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            width: 100%;
+            height: 56px;
+            margin-bottom: 16px;
+            background-color: #fff;
+            border: 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $colors-success;
+            }
+
+            img {
+                vertical-align: middle;
+
+                @include mobile {
+                    width: 74px;
+                }
+            }
+        }
+
+        button + button {
+            @include mobile {
+                border-left: 1px solid rgba(63, 93, 69, 0.1);
+            }
+        }
+    }
+}
+
+.pad-n {
+    display: none;
+
+    @include mobile {
+        display: block;
+        padding-bottom: 30px;
+        background-color: $colors-primary;
+        filter: opacity(100%);
+        color: $colors-secondary;
+    }
+}
+
+.l-n {
+    display: block;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.footer {
+    margin-top: 0;
+}

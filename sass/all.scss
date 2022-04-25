@@ -3,14 +3,14 @@
 @import "pages/variables";
 @import "pages/mixin";
 
-@import "pages/main";
+@import "pages/layout";
 
-@import "layout/home";
-@import "layout/product";
-@import "layout/login";
-@import "layout/cart";
-@import "layout/checkoutShip";
-@import "layout/checkoutPay";
-@import "layout/checkout_E_Invoice";
-@import "layout/checkout_post_Invoice";
-@import "layout/checkout_success";
+@import "main/home";
+@import "main/product";
+@import "main/login";
+@import "main/cart";
+@import "main/checkoutShip";
+@import "main/checkoutPay";
+@import "main/checkout_E_Invoice";
+@import "main/checkout_post_Invoice";
+@import "main/checkout_success";

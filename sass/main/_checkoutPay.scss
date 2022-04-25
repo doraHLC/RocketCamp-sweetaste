@@ -1,0 +1,104 @@
+.checkout_pay {
+    font-family: $font-family-main;
+    width: 780px;
+    margin: 60px auto;
+    gap: 20px;
+    align-items: flex-start;
+
+    @include mobile {
+        width: 100%;
+        margin: 30px auto 0 auto;
+    }
+
+    .pay_form {
+        width: 460px;
+        background-color: $colors-primary;
+        color: $colors-secondary;
+
+        .pay_process {
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                font-size: $h2-font-size;
+                font-weight: 600;
+            }
+
+            img {
+                width: 186px;
+                vertical-align: middle;
+            }
+        }
+
+        .pay_info {
+            padding: 0 40px 14px 40px;
+            font-size: $h5-font-size;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .pay_creditCard {
+                background-image: url(../img/credit-card.svg);
+                background-repeat: no-repeat;
+                background-position: right 20px center;
+                background-size: 20px 20px;
+            }
+
+            label {
+                margin-bottom: 16px;
+
+                h4 {
+                    font-size: $h5-font-size;
+                    margin-bottom: 8px;
+                }
+
+                input {
+                    padding: 20px;
+                    height: 56px;
+                    background-color: $colors-secondary;
+                    border: 0;
+
+                    &::placeholder {
+                        font-family: $font-family-main;
+                        color: $colors-primary;
+                        font-size: $h6-font-size;
+                        filter: opacity(50%);
+                    }
+                }
+
+                select {
+                    width: 49%;
+                    height: 56px;
+                    padding: 0 20px;
+                    background-color: $colors-secondary;
+                    font-family: $font-family-main;
+                    color: rgba(63, 93, 69, 0.5);
+                    font-size: $h6-font-size;
+                    border: 0;
+                    appearance: none;
+                    background: url(/img/sort-solid.svg) 90% / 6% no-repeat $colors-secondary;
+                }
+            }
+
+            .pay_select {
+                justify-content: space-between;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .shipNext_btn {
+        width: 100%;
+        height: 65px;
+        background-color: $colors-success;
+        border: 0;
+        font-size: $h4-font-size;
+        font-family: $font-family-main;
+        color: $colors-primary;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
